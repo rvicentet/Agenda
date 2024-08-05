@@ -1,4 +1,5 @@
 #include <iostream>
+#include <string>
 using namespace std;
 
 //Creado por Renzo Julian Vicente Ticona
@@ -57,7 +58,8 @@ int main(){
 				if(persona[i].escrito==false){
 					persona[i].escrito=true;
 				cout<<"Ingrese el nombre de la persona"<<endl;
-				cin>>persona[i].nombre;
+				cin.ignore();
+				getline(cin, persona[i].nombre);
 				cout<<"Ingrese el genero"<<endl;
 				cin>>persona[i].genero;
 				cout<<"Ingrese la edad"<<endl;
@@ -97,7 +99,8 @@ int main(){
 					enumer++;
 					if(enumer==proce){
 					cout<<"Ingrese el nombre de la persona"<<endl;
-					cin>>persona[i].nombre;
+					cin.ignore();
+					getline(cin, persona[i].nombre);
 					cout<<"Ingrese el genero"<<endl;
 					cin>>persona[i].genero;
 					cout<<"Ingrese la edad"<<endl;
@@ -114,7 +117,8 @@ int main(){
 		//Buscar
 		case 5:
 			cout<<"Ingrese un nombre o codigo universitario: "<<endl;
-			cin>>bus;
+			cin.ignore();
+			getline(cin, persona[i].nombre);
 			for(int i=0; i<50; i++){
 				int busresa = bus.compare(persona[i].nombre);
 				int busresb = bus.compare(persona[i].codigo);
