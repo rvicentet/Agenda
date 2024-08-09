@@ -17,6 +17,14 @@ struct DatosPersona {
     DatosPersona() : escrito(false), nombre("Vacio"), genero("Vacio"), edad(0), correo("Vacio"), codigo("Vacio") {}
 };
 
+// Función para limpiar la pantalla
+void limpiarPantalla() {
+#ifdef _WIN32
+    system("cls");
+#else
+    system("clear");
+#endif
+}
 
 int main() {
     const int size = 50;
