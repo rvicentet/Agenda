@@ -26,6 +26,18 @@ void limpiarPantalla() {
 #endif
 }
 
+// Función para mostrar el menú de opciones
+void mostrarMenu() {
+    cout << "\n=== Agenda de Contactos ===\n";
+    cout << "1. Ver lista de registrados\n";
+    cout << "2. Agregar persona\n";
+    cout << "3. Borrar persona\n";
+    cout << "4. Editar persona\n";
+    cout << "5. Buscar persona\n";
+    cout << "6. Cerrar programa\n";
+    cout << "Seleccione una opcion: ";
+}
+
 int main() {
     const int size = 50;
     DatosPersona persona[size];
